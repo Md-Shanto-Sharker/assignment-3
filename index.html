@@ -25,28 +25,63 @@
     <header class="bg-gradient-to-r from-stone-100 to-stone-200 pb-20" >
         <section class="px-7 mb-11 lg:px-52">
           <!-- navber -->
-            <nav class="hidden">
+            <nav class=" lg:block">
                 <div class=" overflow-hidden lg:flex justify-between">
-                    <h1>
-                        <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full -rotate-45 p-1"></i>
-                        Rinterio</h1>
-    
-                    <div >
-                        <ul class="flex gap-10">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Portfolio</a></li>
-                            <li><a href="">Blogs</a></li>
-                            <li><a href=""></a>Contact Us</li>
-                        </ul>
+                   <div class="flex justify-between items-center lg:block" >
+                    <div class="">
+                      <h1>
+                      <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full -rotate-45 p-1"></i>
+                      Rinterio</h1>
                     </div>
+                         
+                      <div>
+                        <div class="navbar lg:hidden ">
+                          <div class="flex-none">
+                            <button class="btn btn-square btn-ghost">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 stroke-current">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                   </div>
     
-                    <div>
-                        <i class="fa-solid fa-magnifying-glass bg-white p-2  rounded-full mr-4"></i>
-                        <i class="fa-solid fa-cart-shopping bg-white p-2  rounded-full mr-4"></i>
-                        <button class="bg-[#ABEF5F] w-40 h-8 rounded-3xl text-[#1C1C1C]
-                        font-extrabold p-1">Book Consult <i class="fa-solid fa-arrow-right bg-black rounded-full -rotate-45 p-1 text-white"></i> </button>
-                    </div>
+                
+                    
+                  
+                       
+                          
+                       
+
+                    <div class="hidden lg:block" >
+                      <ul class="flex gap-10">
+                          <li><a href="">Home</a></li>
+                          <li><a href="">Services</a></li>
+                          <li><a href="">Portfolio</a></li>
+                          <li><a href="">Blogs</a></li>
+                          <li><a href=""></a>Contact Us</li>
+                      </ul>
+                  </div>
+  
+                  <div class="hidden lg:block">
+                      <i class="fa-solid fa-magnifying-glass bg-white p-2  rounded-full mr-4"></i>
+                      <i class="fa-solid fa-cart-shopping bg-white p-2  rounded-full mr-4"></i>
+                      <button class="bg-[#ABEF5F] w-40 h-8 rounded-3xl text-[#1C1C1C]
+                      font-extrabold p-1">Book Consult <i class="fa-solid fa-arrow-right bg-black rounded-full -rotate-45 p-1 text-white"></i> </button>
+                  </div>
+
+                
+                   
                    </div>
             </nav>
             <!-- Banner section -->
@@ -69,9 +104,9 @@
     </header>
 
     <!-- Main section -->
-      <main class="pb-10">
-          <section class="px-7 mb-11 bg-gradient-to-r from-stone-100 to-stone-200 lg:px-52">
-            <div class="hidden mb-6  ">
+      <main >
+          <section class="px-7 mb-11 bg-gradient-to-r from-stone-200 to-stone-200 lg:px-52">
+            <div class="hidden mb-6 lg:block ">
               <img  src="assets/Vector.png" alt="">
             </div>
             
@@ -238,29 +273,78 @@
           </section>
 
           
-          <section style="background-image: url('assets/bg.jpg');" class="h-64 w-full bg-cover bg-center pt-16 ">
+          <section style="background-image: url('assets/bg.jpg');" class="h-full w-full bg-cover bg-center px-7  lg:px-52 ">
             <!-- Your content here -->
 
-            <div class="text-center pb-52">
+            <div class="text-center pb-10 pt-10">
               <button class="bg-[#e0f1cd] w-40 h-8 rounded-3xl font-bold
                p-1"><i class="fa-solid fa-arrow-right rounded-full  p-1"></i>Let’s Connect</button>
 <br><br>
                <h1 class="text-[#212121] text-4xl font-bold">Let’s Discuss Next Project</h1>
                <br>
                <p class="text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
-               
-               
+               <br>
+
+              <div class="lg:flex gap-6">
+                <div class="bg-white rounded-3xl lg:w-1/2 p-5 flex items-start mb-6 ">
+                  <input class="text-left " placeholder="First Name*" type="text">
+                 </div>
+                 
+                 <div class="bg-white rounded-3xl lg:w-1/2 p-5 flex items-start mb-7 ">
+                  <input class="text-left " placeholder="Last Name*" type="text">
+                 </div>
+              </div>
+
+              <div class="lg:flex gap-6">
+                <div class="bg-white rounded-3xl lg:w-1/2 p-5 flex items-start ">
+                  <input class="text-left " placeholder="Phone Number*" type="text">
+                 </div>
+                 <br>
+                 <div class="bg-white  rounded-3xl lg:w-1/2 p-5 flex items-start">
+                  <input class="text-left " placeholder="Email Number*" type="text">
+                 </div>
+              </div>
+               <br>
+              <div class="bg-white  rounded-3xl lg:full pl-4 pt-2 pb-48 flex items-start">
+                <input class="text-left " placeholder="Write your message here" type="text">
+               </div>
+
+               <br>
+
+               <button class="bg-[#ABEF5F] w-full h-10 rounded-3xl text-[#1C1C1C]
+               font-bold p-1">Send mail <i class="fa-solid fa-arrow-right bg-black rounded-full -rotate-45 p-1 text-white"></i> </button>
+
             </div>
-
-          
-            
           </section>
-          
       </main>
-
-
-
     <!-- Footer section -->
-    <footer></footer>
+    <footer class="bg-black pb-80 pt-16  px-7  lg:px-52">
+        
+          <div class="text-center">
+            <h1 class="text-white text-xl font-bold">
+              <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full -rotate-45 p-1 text-black "></i>
+              Rinterio</h1>
+              <br>
+              <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+          </div>
+<br>
+          <div class="text-center">
+            <ul class="lg:flex gap-10 text-[#E9E9E9] text-sm justify-around">
+                <li class="mb-5"><a href="">Home</a></li>
+                <li class="mb-5"><a href="">Services</a></li>
+                <li class="mb-5"><a href="">Portfolio</a></li>
+                <li class="mb-5"><a href="">Blogs</a></li>
+                <li class="mb-5"><a href=""></a>Contact Us</li>
+            </ul>
+        </div>
+
+        <div class="flex justify-center">
+          <button class="bg-[#ABEF5F] w-52 h-8 rounded-3xl text-[#1C1C1C]
+                        font-extrabold p-1">Book Consult <i class="fa-solid fa-arrow-right bg-black rounded-full -rotate-45 p-1 text-white"></i> </button>
+        </div>
+
+        </section>
+
+    </footer>
 </body>
 </html>
